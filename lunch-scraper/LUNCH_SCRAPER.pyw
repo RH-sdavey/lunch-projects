@@ -101,7 +101,6 @@ layout = [
     [sg.Column(quitcol, background_color='LightGrey')],
 ]
 
-
 # Show the Window to the user
 window = sg.Window('Sean Lunch Scraper', layout, finalize=True, background_color='LightGrey', button_color=all_btn_color, size=(600, 600))
 
@@ -111,7 +110,7 @@ while True:
     event, value = window.read()
     if event in ('Quit', None):
         break
-    # Lookup event in function dictionary
+    # Lookup event in dispatch_dictionary
     if event in dispatch_dictionary:
         func_to_call = dispatch_dictionary[event]   # get function from dispatch dictionary
         func_to_call()
