@@ -29,6 +29,7 @@ filedata = filedata.replace(m_rep, unidecode.unidecode(str(all_days_menus)))
 filedata = filedata.replace(',', '')
 filedata = filedata.replace('[<section', '<section')
 
+
 filedata = filedata.replace('>Mitrovski<', ' style="font-size:18px; color:#091034;">Mitrovski<')
 #
 #
